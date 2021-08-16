@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State bank Of India</title>
+
+    <!-- tail-wind css  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="text-center text-6xl mt-8">Let's get some <span class="font-semibold text-yellow-400">mooooney</span>
+        </h1>
+    </header>
+
+        <!-- money-handling section  -->
+    <main>
+        <section class="mt-10">
+            <div class="grid grid-cols-3 gap-4 text-white w-3/4 mx-auto">
+                <div class="bg-blue-300 rounded p-16">
+                    <h3 class="text-3xl">Deposit</h3>
+                    <h4 class="text-4xl">$$ <span id="deposit-display">0</span></h4>
+                </div>
+                <div class="bg-green-300 rounded p-16">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h4 class="text-4xl">$$ <span id="withdraw-display">0</span></h4>
+                </div>
+                <div class="bg-yellow-300 rounded p-16">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h4 class="text-4xl">$$ <span id="balance-display">1230</span></h4>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- enter your amount  -->
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto">
+                <div class="bg-purple-500 rounded p-12">
+                    <h3 class="text-center text-white text-2xl">Please deposit</h3>
+
+                    <input id="deposit-input" class="block border-2 rounded p-2 m-6 mx-auto" type="text" name="" >
+
+                    <button id="deposit-btn" class="block bg-pink-600 text-white px-8 py-2 mx-auto ">Deposit</button>
+                </div>
+                <div class="bg-red-400 rounded p-12">
+                    <h3 class="text-center text-white text-2xl">Please Withdraw</h3>
+
+                    <input  id="withdraw-input" class="block border-2 rounded p-2 m-6 mx-auto" type="text" name="" >
+
+                    <button id="withdraw-btn" class="block bg-purple-600 text-white px-8 py-2 mx-auto ">Withdraw</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <!-- --------java-script------ -->
+    <script src="js/second.js"></script>
+</body>
+</html>
